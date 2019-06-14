@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,13 +15,57 @@
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/wow.min.js"></script>
 </head>
+
 <body>
-	<div class="container-fluid border border-success text-center p-5">
-		가나다라
+	<div id="box" class="box container-fluid border border-success text-center p-5">
+		<div id="txt1" class="txt1" style="color: black;">
+		가나다라	
+		</div>
 	</div>
-	<div class="container border border-danger text-center my-5">
-		가나다라
+	<div class="container border border-danger text-center my-5 p-3">
+		<table class="table table-dark table-striped">
+			<thead>
+				<tr>
+					<th>Firstname</th>
+					<th>Lastname</th>
+					<th>Email</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>John</td>
+					<td>Doe</td>
+					<td>john@example.com</td>
+				</tr>
+				<tr>
+					<td>Mary</td>
+					<td>Moe</td>
+					<td>mary@example.com</td>
+				</tr>
+				<tr>
+					<td>July</td>
+					<td>Dooley</td>
+					<td>july@example.com</td>
+				</tr>
+			</tbody>
+		</table>
 	</div>
-	<script>new WOW().init();</script>
+	<!-- 그리드 -->
+	<div class="container border border-danger my-5 row">
+		<div class="logo border border-info bg-info col-12 col-sm-4 col-md-3 col-lg-2">로고</div>
+		<div class="bg-danger col-sm-2 col-md-4 col-lg-6"></div>
+		<div class="navi border border-primary bg-warning col-12 col-sm-6 col-md-5 col-lg-4">네비</div>
+	</div>
+	<div class="container border border-danger my-5 row">
+		<div class="logo border border-info bg-info col-12 col-sm-4">로고</div>
+		<div class="bg-danger col-sm-2"></div>
+		<div class="navi border border-primary bg-warning col-12 col-sm-6">네비</div>
+	</div>
+	
+
+	<script>
+		new WOW().init();
+	</script>
 </body>
+
 </html>
